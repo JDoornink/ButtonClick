@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NextPageViewController.swift
 //  Pomodoro-NoStoryBoard1
 //
 //  Created by JD on 6/16/20.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NextPageViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        label.text = "Congratulations you made it to the next page"
     }
 
-
 }
-

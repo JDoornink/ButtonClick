@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		9004CC0624990AFC00B8F23A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9004CC0524990AFC00B8F23A /* AppDelegate.swift */; };
 		9004CC0824990AFC00B8F23A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9004CC0724990AFC00B8F23A /* SceneDelegate.swift */; };
-		9004CC0A24990AFC00B8F23A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9004CC0924990AFC00B8F23A /* ViewController.swift */; };
-		9004CC0D24990AFC00B8F23A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9004CC0B24990AFC00B8F23A /* Main.storyboard */; };
 		9004CC1024990AFC00B8F23A /* Pomodoro_NoStoryBoard1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9004CC0E24990AFC00B8F23A /* Pomodoro_NoStoryBoard1.xcdatamodeld */; };
 		9004CC1224990AFE00B8F23A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9004CC1124990AFE00B8F23A /* Assets.xcassets */; };
 		9004CC1524990AFE00B8F23A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9004CC1324990AFE00B8F23A /* LaunchScreen.storyboard */; };
+		9004CC3424991F7500B8F23A /* HomeViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9004CC3224991F7500B8F23A /* HomeViewController2.swift */; };
+		9004CC3524991F7500B8F23A /* HomeViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9004CC3324991F7500B8F23A /* HomeViewController2.xib */; };
+		9004CC422499229700B8F23A /* NextPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9004CC402499229700B8F23A /* NextPageViewController.swift */; };
+		9004CC432499229700B8F23A /* NextPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9004CC412499229700B8F23A /* NextPageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9004CC0224990AFC00B8F23A /* Pomodoro-NoStoryBoard1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pomodoro-NoStoryBoard1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9004CC0524990AFC00B8F23A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9004CC0724990AFC00B8F23A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9004CC0924990AFC00B8F23A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9004CC0C24990AFC00B8F23A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9004CC0F24990AFC00B8F23A /* Pomodoro_NoStoryBoard1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pomodoro_NoStoryBoard1.xcdatamodel; sourceTree = "<group>"; };
 		9004CC1124990AFE00B8F23A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9004CC1424990AFE00B8F23A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9004CC1624990AFE00B8F23A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9004CC3224991F7500B8F23A /* HomeViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController2.swift; sourceTree = "<group>"; };
+		9004CC3324991F7500B8F23A /* HomeViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController2.xib; sourceTree = "<group>"; };
+		9004CC402499229700B8F23A /* NextPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPageViewController.swift; sourceTree = "<group>"; };
+		9004CC412499229700B8F23A /* NextPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextPageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,82 @@
 		9004CC0424990AFC00B8F23A /* Pomodoro-NoStoryBoard1 */ = {
 			isa = PBXGroup;
 			children = (
+				9004CC1C24990C3400B8F23A /* Source */,
 				9004CC0524990AFC00B8F23A /* AppDelegate.swift */,
 				9004CC0724990AFC00B8F23A /* SceneDelegate.swift */,
-				9004CC0924990AFC00B8F23A /* ViewController.swift */,
-				9004CC0B24990AFC00B8F23A /* Main.storyboard */,
 				9004CC1124990AFE00B8F23A /* Assets.xcassets */,
 				9004CC1324990AFE00B8F23A /* LaunchScreen.storyboard */,
 				9004CC1624990AFE00B8F23A /* Info.plist */,
 				9004CC0E24990AFC00B8F23A /* Pomodoro_NoStoryBoard1.xcdatamodeld */,
 			);
 			path = "Pomodoro-NoStoryBoard1";
+			sourceTree = "<group>";
+		};
+		9004CC1C24990C3400B8F23A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9004CC2624990E2700B8F23A /* UI */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9004CC2624990E2700B8F23A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9004CC3D2499226800B8F23A /* NextPageModule */,
+				9004CC2B24991F0100B8F23A /* HomeModule2 */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9004CC2B24991F0100B8F23A /* HomeModule2 */ = {
+			isa = PBXGroup;
+			children = (
+				9004CC2D24991F1700B8F23A /* View */,
+				9004CC2C24991F0D00B8F23A /* Presenter */,
+			);
+			path = HomeModule2;
+			sourceTree = "<group>";
+		};
+		9004CC2C24991F0D00B8F23A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9004CC2D24991F1700B8F23A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9004CC3324991F7500B8F23A /* HomeViewController2.xib */,
+				9004CC3224991F7500B8F23A /* HomeViewController2.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9004CC3D2499226800B8F23A /* NextPageModule */ = {
+			isa = PBXGroup;
+			children = (
+				9004CC3F2499227F00B8F23A /* View */,
+				9004CC3E2499227600B8F23A /* Presenter */,
+			);
+			path = NextPageModule;
+			sourceTree = "<group>";
+		};
+		9004CC3E2499227600B8F23A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9004CC3F2499227F00B8F23A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9004CC402499229700B8F23A /* NextPageViewController.swift */,
+				9004CC412499229700B8F23A /* NextPageViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +200,8 @@
 			files = (
 				9004CC1524990AFE00B8F23A /* LaunchScreen.storyboard in Resources */,
 				9004CC1224990AFE00B8F23A /* Assets.xcassets in Resources */,
-				9004CC0D24990AFC00B8F23A /* Main.storyboard in Resources */,
+				9004CC432499229700B8F23A /* NextPageViewController.xib in Resources */,
+				9004CC3524991F7500B8F23A /* HomeViewController2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,23 +213,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9004CC1024990AFC00B8F23A /* Pomodoro_NoStoryBoard1.xcdatamodeld in Sources */,
-				9004CC0A24990AFC00B8F23A /* ViewController.swift in Sources */,
 				9004CC0624990AFC00B8F23A /* AppDelegate.swift in Sources */,
+				9004CC3424991F7500B8F23A /* HomeViewController2.swift in Sources */,
 				9004CC0824990AFC00B8F23A /* SceneDelegate.swift in Sources */,
+				9004CC422499229700B8F23A /* NextPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9004CC0B24990AFC00B8F23A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9004CC0C24990AFC00B8F23A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9004CC1324990AFE00B8F23A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
