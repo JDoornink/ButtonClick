@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A22499A24992DBC009EF176 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22499924992DBC009EF176 /* HomePresenter.swift */; };
+		0A22499C249932AE009EF176 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22499B249932AE009EF176 /* ModuleBuilder.swift */; };
+		0A22499F2499362C009EF176 /* NextPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22499E2499362C009EF176 /* NextPagePresenter.swift */; };
 		9004CC0624990AFC00B8F23A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9004CC0524990AFC00B8F23A /* AppDelegate.swift */; };
 		9004CC0824990AFC00B8F23A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9004CC0724990AFC00B8F23A /* SceneDelegate.swift */; };
 		9004CC1024990AFC00B8F23A /* Pomodoro_NoStoryBoard1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9004CC0E24990AFC00B8F23A /* Pomodoro_NoStoryBoard1.xcdatamodeld */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A22499924992DBC009EF176 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		0A22499B249932AE009EF176 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		0A22499E2499362C009EF176 /* NextPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPagePresenter.swift; sourceTree = "<group>"; };
 		9004CC0224990AFC00B8F23A /* Pomodoro-NoStoryBoard1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pomodoro-NoStoryBoard1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9004CC0524990AFC00B8F23A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9004CC0724990AFC00B8F23A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +49,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A22499824992DAB009EF176 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0A22499924992DBC009EF176 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0A22499D24993620009EF176 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0A22499E2499362C009EF176 /* NextPagePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		9004CBF924990AFC00B8F23A = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				9004CC2624990E2700B8F23A /* UI */,
+				0A22499B249932AE009EF176 /* ModuleBuilder.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -94,16 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				9004CC2D24991F1700B8F23A /* View */,
-				9004CC2C24991F0D00B8F23A /* Presenter */,
+				0A22499824992DAB009EF176 /* Presenter */,
 			);
 			path = HomeModule2;
-			sourceTree = "<group>";
-		};
-		9004CC2C24991F0D00B8F23A /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		9004CC2D24991F1700B8F23A /* View */ = {
@@ -119,16 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				9004CC3F2499227F00B8F23A /* View */,
-				9004CC3E2499227600B8F23A /* Presenter */,
+				0A22499D24993620009EF176 /* Presenter */,
 			);
 			path = NextPageModule;
-			sourceTree = "<group>";
-		};
-		9004CC3E2499227600B8F23A /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		9004CC3F2499227F00B8F23A /* View */ = {
@@ -215,7 +224,10 @@
 				9004CC1024990AFC00B8F23A /* Pomodoro_NoStoryBoard1.xcdatamodeld in Sources */,
 				9004CC0624990AFC00B8F23A /* AppDelegate.swift in Sources */,
 				9004CC3424991F7500B8F23A /* HomeViewController2.swift in Sources */,
+				0A22499A24992DBC009EF176 /* HomePresenter.swift in Sources */,
+				0A22499C249932AE009EF176 /* ModuleBuilder.swift in Sources */,
 				9004CC0824990AFC00B8F23A /* SceneDelegate.swift in Sources */,
+				0A22499F2499362C009EF176 /* NextPagePresenter.swift in Sources */,
 				9004CC422499229700B8F23A /* NextPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

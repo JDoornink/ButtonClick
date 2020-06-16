@@ -11,13 +11,15 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
-
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let winScene = (scene as? UIWindowScene) else { return }
-        let homeViewController2 = HomeViewController2(nibName: "HomeViewController2", bundle : nil)
+    
+        // MARK: Create Home Module aka UIViewController with all dependencies
+        let homeViewController2Module = ModuleBuilder.createHomeModule()
+        
         window = UIWindow(windowScene: winScene)
-        window?.rootViewController = homeViewController2
+        window?.rootViewController = UINavigationController(rootViewController: homeViewController2Module)
         window?.makeKeyAndVisible()
     }
 
