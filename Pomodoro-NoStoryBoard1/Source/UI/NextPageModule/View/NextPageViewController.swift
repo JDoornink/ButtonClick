@@ -8,12 +8,20 @@
 
 import UIKit
 
-class NextPageViewController: UIViewController {
+protocol NextPageViewProtocol: class {
+}
 
-    @IBOutlet weak var label: UILabel!
+class NextPageViewController: UIViewController {
+    @IBOutlet var label: UILabel!
+
+    var presenter: NextPagePresenterProtocol!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
         label.text = "Congratulations you made it to the next page"
     }
+}
 
+extension NextPageViewController: NextPageViewProtocol {
 }
