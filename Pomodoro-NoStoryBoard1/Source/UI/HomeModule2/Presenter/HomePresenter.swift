@@ -18,6 +18,7 @@ protocol HomePresenterProtocol: class {
 class HomePresenter {
     // MARK: 8 - reference to View protocol (interface)
     private weak var view: HomeViewController2ViewProtocol!
+
     
     // MARK: 9 - Here is initializer for the presenter, it guarantees that Presenter can't be instantiated without reference to View protocol (interface)
     required init(view: HomeViewController2ViewProtocol) {

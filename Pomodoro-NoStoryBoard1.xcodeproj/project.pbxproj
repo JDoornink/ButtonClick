@@ -19,6 +19,9 @@
 		9004CC3524991F7500B8F23A /* HomeViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9004CC3324991F7500B8F23A /* HomeViewController2.xib */; };
 		9004CC422499229700B8F23A /* NextPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9004CC402499229700B8F23A /* NextPageViewController.swift */; };
 		9004CC432499229700B8F23A /* NextPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9004CC412499229700B8F23A /* NextPageViewController.xib */; };
+		90E4E081249ECF0B00BFD826 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E4E080249ECF0B00BFD826 /* UIView+Ext.swift */; };
+		90E4E083249ED10800BFD826 /* TasksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E4E082249ED10800BFD826 /* TasksCell.swift */; };
+		90E4E086249ED66A00BFD826 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E4E085249ED66A00BFD826 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		9004CC3324991F7500B8F23A /* HomeViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController2.xib; sourceTree = "<group>"; };
 		9004CC402499229700B8F23A /* NextPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPageViewController.swift; sourceTree = "<group>"; };
 		9004CC412499229700B8F23A /* NextPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextPageViewController.xib; sourceTree = "<group>"; };
+		90E4E080249ECF0B00BFD826 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		90E4E082249ED10800BFD826 /* TasksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksCell.swift; sourceTree = "<group>"; };
+		90E4E085249ED66A00BFD826 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 		9004CC0424990AFC00B8F23A /* Pomodoro-NoStoryBoard1 */ = {
 			isa = PBXGroup;
 			children = (
+				90E4E07F249ECEDF00BFD826 /* Utilities */,
 				9004CC1C24990C3400B8F23A /* Source */,
 				9004CC0524990AFC00B8F23A /* AppDelegate.swift */,
 				9004CC0724990AFC00B8F23A /* SceneDelegate.swift */,
@@ -98,6 +105,7 @@
 		9004CC1C24990C3400B8F23A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				90E4E084249ED65800BFD826 /* Models */,
 				9004CC2624990E2700B8F23A /* UI */,
 				0A22499B249932AE009EF176 /* ModuleBuilder.swift */,
 			);
@@ -145,8 +153,25 @@
 			children = (
 				9004CC402499229700B8F23A /* NextPageViewController.swift */,
 				9004CC412499229700B8F23A /* NextPageViewController.xib */,
+				90E4E082249ED10800BFD826 /* TasksCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		90E4E07F249ECEDF00BFD826 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				90E4E080249ECF0B00BFD826 /* UIView+Ext.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		90E4E084249ED65800BFD826 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90E4E085249ED66A00BFD826 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,8 +250,11 @@
 				9004CC0624990AFC00B8F23A /* AppDelegate.swift in Sources */,
 				9004CC3424991F7500B8F23A /* HomeViewController2.swift in Sources */,
 				0A22499A24992DBC009EF176 /* HomePresenter.swift in Sources */,
+				90E4E086249ED66A00BFD826 /* Task.swift in Sources */,
 				0A22499C249932AE009EF176 /* ModuleBuilder.swift in Sources */,
+				90E4E081249ECF0B00BFD826 /* UIView+Ext.swift in Sources */,
 				9004CC0824990AFC00B8F23A /* SceneDelegate.swift in Sources */,
+				90E4E083249ED10800BFD826 /* TasksCell.swift in Sources */,
 				0A22499F2499362C009EF176 /* NextPagePresenter.swift in Sources */,
 				9004CC422499229700B8F23A /* NextPageViewController.swift in Sources */,
 			);
